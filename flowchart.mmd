@@ -1,0 +1,25 @@
+graph TD
+    A[User Accesses Platform] --> B{Authentication}
+    B -- Successful Login --> C{Check Role}
+    
+    C -- Admin --> D[Admin Dashboard]
+    D --> D1[Manage Users & Roles]
+    D --> D2[Global System Analytics]
+    D --> D3[Manage Master Settings]
+    
+    C -- Instructor --> E[Instructor Dashboard]
+    E --> E1[Create & Manage Courses]
+    E --> E2[Create Quizzes / Upload Video Media]
+    E --> E3[Monitor Batch Progress]
+    
+    C -- Student --> F[Student Dashboard]
+    F --> F1[Enroll & View Video Lessons]
+    F --> F2[Take Topic Assessment Quizzes]
+    
+    F --> F3[Take Company-Specific AI Mock Test]
+    F3 --> G{AI Generation Engine}
+    G -- Invokes Google Generative AI --> H[Generates Custom Test based on Difficulty]
+    H --> I[Student Submits Test]
+    I --> J[Evaluate Scores & Analyze Performance]
+    J --> K[Generate Comprehensive Student Profile]
+    K --> L[AI-Driven Career Guidance & Remedial Suggestions]
