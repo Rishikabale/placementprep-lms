@@ -155,7 +155,10 @@ const seed = async () => {
                 { sectionName: 'Numerical Ability', questionCount: 20, category: 'Quant', weightage: 2 },
                 { sectionName: 'Verbal Ability', questionCount: 15, category: 'Verbal', weightage: 1 },
                 { sectionName: 'Reasoning Ability', questionCount: 15, category: 'Logical', weightage: 1.5 }
-            ]
+            ],
+            isPublic: true,
+            isGlobal: true,
+            createdBy: admin._id
         });
 
         await CompanyPattern.create({
@@ -166,7 +169,10 @@ const seed = async () => {
                 { sectionName: 'Pseudo Code', questionCount: 15, category: 'Coding', weightage: 3 },
                 { sectionName: 'English Communication', questionCount: 20, category: 'Verbal', weightage: 1 },
                 { sectionName: 'Game Based Aptitude', questionCount: 4, category: 'Logical', weightage: 5 }
-            ]
+            ],
+            isPublic: true,
+            isGlobal: true,
+            createdBy: admin._id
         });
 
         await CompanyPattern.create({
@@ -177,7 +183,10 @@ const seed = async () => {
                 { sectionName: 'Mathematical Ability', questionCount: 15, category: 'Quant', weightage: 2 },
                 { sectionName: 'Technical MCQ', questionCount: 20, category: 'Coding', weightage: 2 },
                 { sectionName: 'Puzzle Solving', questionCount: 5, category: 'Logical', weightage: 4 }
-            ]
+            ],
+            isPublic: true,
+            isGlobal: true,
+            createdBy: admin._id
         });
 
         await CompanyPattern.create({
@@ -188,7 +197,10 @@ const seed = async () => {
                 { sectionName: 'Aptitude', questionCount: 20, category: 'Quant', weightage: 1 },
                 { sectionName: 'Logical', questionCount: 20, category: 'Logical', weightage: 1 },
                 { sectionName: 'Verbal', questionCount: 20, category: 'Verbal', weightage: 1 }
-            ]
+            ],
+            isPublic: true,
+            isGlobal: true,
+            createdBy: admin._id
         });
 
         console.log('Advanced Company Patterns Created');
