@@ -133,7 +133,7 @@ exports.forgotPassword = forgotPassword;
 const resetPassword = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         // Get hashed token
-        const resetPasswordToken = crypto_1.default.createHash('sha256').update(req.params.token).digest('hex');
+        const resetPasswordToken = crypto_1.default.createHash('sha256').update(String(req.params.token)).digest('hex');
         const user = yield User_1.default.findOne({
             resetPasswordToken,
             resetPasswordExpire: { $gt: new Date() },
