@@ -135,8 +135,7 @@ The architecture follows a standard decoupled full-stack pattern:
 ![Ai Mock Tests](assets/aimock.png)
 ![Questions](assets/questionbank.png)
 
-- *[Placeholder: Mock Test Interface]*
-- *[Placeholder: Resume Analyzer Results]*
+
 
 ##  Future Improvements
 
