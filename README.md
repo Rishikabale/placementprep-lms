@@ -130,10 +130,10 @@ The architecture follows a standard decoupled full-stack pattern:
 5. **Response:** The backend returns formatted JSON data, which the frontend visualizes on the dashboard.
 
 ##  Screenshots
-![Resume Analyzer](assets/images/Resumeanalyzerresults.png)
-![company pattern](assets/images/companypatterns.png)
-![Ai Mock Tests](assets/images/aimock.png)
-![Questions](assets/images/questionbank.png)
+![Resume Analyzer](assets/Resumeanalyzerresults.png)
+![company pattern](assets/companypatterns.png)
+![Ai Mock Tests](assets/aimock.png)
+![Questions](assets/questionbank.png)
 
 - *[Placeholder: Mock Test Interface]*
 - *[Placeholder: Resume Analyzer Results]*
