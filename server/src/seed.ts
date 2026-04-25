@@ -145,30 +145,53 @@ const seed = async () => {
         // Create Company Patterns
         const CompanyPattern = require('./models/CompanyPattern').default;
 
-        const tcsPattern = await CompanyPattern.create({
-            name: 'TCS NQT Pattern',
-            description: 'Standard TCS National Qualifier Test pattern with Quant, Verbal, and Logic.',
-            totalDuration: 30, // Shortened for demo
+        await CompanyPattern.create({
+            name: 'TCS NQT (Prime)',
+            description: 'Advanced pattern for TCS Prime/Digital roles focusing on Numerical and Reasoning Ability.',
+            totalDuration: 90,
             negativeMarking: true,
             negativeMarkValue: 0.33,
             sections: [
-                { sectionName: 'Quantitative Aptitude', questionCount: 2, category: 'Quant', weightage: 1 },
-                { sectionName: 'Verbal Ability', questionCount: 2, category: 'Verbal', weightage: 1 },
-                { sectionName: 'Reasoning Ability', questionCount: 2, category: 'Logical', weightage: 1 }
+                { sectionName: 'Numerical Ability', questionCount: 20, category: 'Quant', weightage: 2 },
+                { sectionName: 'Verbal Ability', questionCount: 15, category: 'Verbal', weightage: 1 },
+                { sectionName: 'Reasoning Ability', questionCount: 15, category: 'Logical', weightage: 1.5 }
             ]
         });
 
-        const accenturePattern = await CompanyPattern.create({
-            name: 'Accenture Mock',
-            description: 'Accenture placement papers pattern.',
-            totalDuration: 45,
+        await CompanyPattern.create({
+            name: 'Capgemini Excellence',
+            description: 'Focuses on Pseudo-code, English Communication and Game-based Aptitude.',
+            totalDuration: 100,
             sections: [
-                { sectionName: 'Critical Reasoning', questionCount: 2, category: 'Logical', weightage: 2 },
-                { sectionName: 'Abstract Reasoning', questionCount: 2, category: 'Quant', weightage: 2 }
+                { sectionName: 'Pseudo Code', questionCount: 15, category: 'Coding', weightage: 3 },
+                { sectionName: 'English Communication', questionCount: 20, category: 'Verbal', weightage: 1 },
+                { sectionName: 'Game Based Aptitude', questionCount: 4, category: 'Logical', weightage: 5 }
             ]
         });
 
-        console.log('Company Patterns Created');
+        await CompanyPattern.create({
+            name: 'Infosys Specialist',
+            description: 'Pattern for System Engineer Specialist role involving complex data structures.',
+            totalDuration: 120,
+            sections: [
+                { sectionName: 'Mathematical Ability', questionCount: 15, category: 'Quant', weightage: 2 },
+                { sectionName: 'Technical MCQ', questionCount: 20, category: 'Coding', weightage: 2 },
+                { sectionName: 'Puzzle Solving', questionCount: 5, category: 'Logical', weightage: 4 }
+            ]
+        });
+
+        await CompanyPattern.create({
+            name: 'Wipro Elite NLTH',
+            description: 'National Level Talent Hunt pattern for Turbo and Elite profiles.',
+            totalDuration: 60,
+            sections: [
+                { sectionName: 'Aptitude', questionCount: 20, category: 'Quant', weightage: 1 },
+                { sectionName: 'Logical', questionCount: 20, category: 'Logical', weightage: 1 },
+                { sectionName: 'Verbal', questionCount: 20, category: 'Verbal', weightage: 1 }
+            ]
+        });
+
+        console.log('Advanced Company Patterns Created');
 
         // Create specific questions for these patterns
         const questions = [
